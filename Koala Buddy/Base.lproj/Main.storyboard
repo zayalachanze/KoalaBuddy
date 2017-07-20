@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nSN-2r-ykl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="ijW-Yp-6dU">
+            <objects>
+                <viewController id="nSN-2r-ykl" customClass="LaunchViewController" customModule="Koala_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EC6-uy-T0J"/>
+                        <viewControllerLayoutGuide type="bottom" id="ncM-g5-vmQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bak-Ep-gsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6l-6Z-MfX">
+                                <rect key="frame" x="88" y="465" width="200" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qbz-a8-dZO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Walking">
+                                    <color key="titleColor" red="0.46562108397483826" green="0.76650452613830566" blue="0.66278111934661865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XYM-vr-gAS" kind="show" id="bQP-oL-iJS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Koala Emoji" translatesAutoresizingMaskIntoConstraints="NO" id="rkM-Qu-3aD">
+                                <rect key="frame" x="67" y="174" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3Pt-ar-tgh"/>
+                                    <constraint firstAttribute="height" constant="240" id="X7v-Gi-yHx"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dxm-Be-lGg">
+                                <rect key="frame" x="57" y="55" width="261" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KoalaBuddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK4-Pg-xWu">
+                                        <rect key="frame" x="2" y="0.0" width="257" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="257" id="fnz-ft-csD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="44"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A friend who walks with you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ds-0X-cwh">
+                                        <rect key="frame" x="0.0" y="60.5" width="261" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1ds-0X-cwh" firstAttribute="leading" secondItem="dxm-Be-lGg" secondAttribute="leading" id="HcT-3i-kth"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46765981361482262" green="0.76822571286472152" blue="0.66283973920912886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dxm-Be-lGg" firstAttribute="top" secondItem="EC6-uy-T0J" secondAttribute="bottom" constant="35" id="4qo-Eq-vp8"/>
+                            <constraint firstItem="z6l-6Z-MfX" firstAttribute="top" secondItem="rkM-Qu-3aD" secondAttribute="bottom" constant="51" id="CJq-l7-FJQ"/>
+                            <constraint firstItem="rkM-Qu-3aD" firstAttribute="top" secondItem="dxm-Be-lGg" secondAttribute="bottom" constant="35" id="JLk-Ru-qB4"/>
+                            <constraint firstItem="z6l-6Z-MfX" firstAttribute="leading" secondItem="bak-Ep-gsJ" secondAttribute="leadingMargin" constant="72" id="Lgf-wj-Szq"/>
+                            <constraint firstItem="dxm-Be-lGg" firstAttribute="leading" secondItem="bak-Ep-gsJ" secondAttribute="leadingMargin" constant="41" id="UHz-eo-CcL"/>
+                            <constraint firstItem="dxm-Be-lGg" firstAttribute="centerX" secondItem="rkM-Qu-3aD" secondAttribute="centerX" id="aTj-G0-ktP"/>
+                            <constraint firstItem="rkM-Qu-3aD" firstAttribute="centerX" secondItem="bak-Ep-gsJ" secondAttribute="centerX" id="eO4-TC-rzW"/>
+                            <constraint firstItem="dxm-Be-lGg" firstAttribute="centerX" secondItem="z6l-6Z-MfX" secondAttribute="centerX" id="g5H-sT-j2W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="z6l-6Z-MfX" id="yby-N2-MNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmc-CL-JO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439.19999999999999" y="121.88905547226388"/>
+        </scene>
+        <!--Start Walk View Controller-->
+        <scene sceneID="zNe-Pp-v9E">
+            <objects>
+                <viewController id="XYM-vr-gAS" customClass="StartWalkViewController" customModule="Koala_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lvy-2F-yyy"/>
+                        <viewControllerLayoutGuide type="bottom" id="xiM-sj-SHp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qin-EZ-OMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrassOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="8Ss-1H-Rwx">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3u-fM-NS1">
+                                <rect key="frame" x="80" y="95" width="247" height="100"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWw-HN-KOh">
+                                <rect key="frame" x="161" y="215" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="2bT-MH-9be"/>
+                                    <constraint firstAttribute="height" constant="30" id="fC8-hD-hHj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="timeSelected:" destination="XYM-vr-gAS" eventType="touchUpInside" id="K89-Th-RA6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-UN-tTk">
+                                <rect key="frame" x="133" y="190" width="140" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="P2U-LF-K9C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long will your walk be?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3g-Lw-VtJ">
+                                <rect key="frame" x="133" y="26" width="140" height="81"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iip-9H-QGh">
+                                <rect key="frame" x="143" y="307" width="90.5" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-Wa-pMW">
+                                <rect key="frame" x="113" y="623" width="150" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="MPV-Dn-pUV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Start My Walk!">
+                                    <color key="titleColor" red="0.54041945934295654" green="0.80846071243286133" blue="0.95297050476074219" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="startWalk:" destination="XYM-vr-gAS" eventType="touchUpInside" id="Lo7-wZ-Pr4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KoalaRegular" translatesAutoresizingMaskIntoConstraints="NO" id="GXU-HY-JmV">
+                                <rect key="frame" x="107" y="364.5" width="160" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="ZVu-B5-Q1Q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GXU-HY-JmV" firstAttribute="centerX" secondItem="8Ss-1H-Rwx" secondAttribute="centerX" id="46y-XE-p7x"/>
+                            <constraint firstItem="8Ss-1H-Rwx" firstAttribute="bottom" secondItem="xiM-sj-SHp" secondAttribute="top" id="4hz-qO-Sjc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z3u-fM-NS1" secondAttribute="trailing" constant="32" id="5Y0-Ov-I9c"/>
+                            <constraint firstItem="xiM-sj-SHp" firstAttribute="top" secondItem="ZRJ-Wa-pMW" secondAttribute="bottom" constant="8" id="6je-BW-zhQ"/>
+                            <constraint firstItem="Z3u-fM-NS1" firstAttribute="centerX" secondItem="Cl0-UN-tTk" secondAttribute="centerX" id="7YF-x6-ngs"/>
+                            <constraint firstItem="xiM-sj-SHp" firstAttribute="top" secondItem="WWw-HN-KOh" secondAttribute="bottom" constant="422" id="9mp-hD-nrv"/>
+                            <constraint firstItem="iip-9H-QGh" firstAttribute="top" secondItem="L3g-Lw-VtJ" secondAttribute="bottom" constant="200" id="AkR-jt-Qsy"/>
+                            <constraint firstItem="GXU-HY-JmV" firstAttribute="top" secondItem="iip-9H-QGh" secondAttribute="bottom" constant="8" id="Eu1-bP-UTr"/>
+                            <constraint firstItem="L3g-Lw-VtJ" firstAttribute="width" secondItem="Cl0-UN-tTk" secondAttribute="width" id="GrR-Lh-6NU"/>
+                            <constraint firstItem="L3g-Lw-VtJ" firstAttribute="trailing" secondItem="Cl0-UN-tTk" secondAttribute="trailing" id="H1z-q1-mPb"/>
+                            <constraint firstItem="ZRJ-Wa-pMW" firstAttribute="centerX" secondItem="qin-EZ-OMs" secondAttribute="centerX" id="HfV-xe-4DI"/>
+                            <constraint firstItem="L3g-Lw-VtJ" firstAttribute="leading" secondItem="qin-EZ-OMs" secondAttribute="leadingMargin" constant="117" id="HqC-Br-oUk"/>
+                            <constraint firstItem="Cl0-UN-tTk" firstAttribute="centerX" secondItem="WWw-HN-KOh" secondAttribute="centerX" id="JQn-GK-582"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L3g-Lw-VtJ" secondAttribute="trailing" constant="86" id="Mxy-ei-Imn"/>
+                            <constraint firstItem="Z3u-fM-NS1" firstAttribute="top" secondItem="Lvy-2F-yyy" secondAttribute="bottom" constant="75" id="OwZ-i2-TGW"/>
+                            <constraint firstItem="L3g-Lw-VtJ" firstAttribute="centerX" secondItem="Cl0-UN-tTk" secondAttribute="centerX" id="Xfa-hO-tYQ"/>
+                            <constraint firstItem="GXU-HY-JmV" firstAttribute="leading" secondItem="qin-EZ-OMs" secondAttribute="leadingMargin" constant="91" id="aVY-an-zEY"/>
+                            <constraint firstItem="Cl0-UN-tTk" firstAttribute="top" secondItem="L3g-Lw-VtJ" secondAttribute="bottom" constant="83" id="b4z-sS-rJS"/>
+                            <constraint firstItem="8Ss-1H-Rwx" firstAttribute="centerX" secondItem="qin-EZ-OMs" secondAttribute="centerX" id="cSz-aU-Ngi"/>
+                            <constraint firstItem="WWw-HN-KOh" firstAttribute="top" secondItem="Z3u-fM-NS1" secondAttribute="bottom" constant="20" id="d0D-fX-qo1"/>
+                            <constraint firstItem="xiM-sj-SHp" firstAttribute="top" secondItem="Cl0-UN-tTk" secondAttribute="bottom" constant="442" id="ekK-x3-Mbm"/>
+                            <constraint firstItem="8Ss-1H-Rwx" firstAttribute="top" secondItem="qin-EZ-OMs" secondAttribute="top" id="f8f-xG-48C"/>
+                            <constraint firstItem="8Ss-1H-Rwx" firstAttribute="leading" secondItem="qin-EZ-OMs" secondAttribute="leadingMargin" constant="-20" id="kfX-CG-XCm"/>
+                            <constraint firstItem="Z3u-fM-NS1" firstAttribute="leading" secondItem="qin-EZ-OMs" secondAttribute="leadingMargin" constant="64" id="nsh-ge-4tl"/>
+                            <constraint firstItem="L3g-Lw-VtJ" firstAttribute="top" secondItem="Lvy-2F-yyy" secondAttribute="bottom" constant="6" id="qI9-0p-hTF"/>
+                            <constraint firstItem="L3g-Lw-VtJ" firstAttribute="leading" secondItem="Cl0-UN-tTk" secondAttribute="leading" id="rTz-re-UnX"/>
+                            <constraint firstItem="iip-9H-QGh" firstAttribute="centerX" secondItem="8Ss-1H-Rwx" secondAttribute="centerX" id="ybh-MP-SQK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="WWw-HN-KOh" id="hRm-no-DhU"/>
+                        <outlet property="startWalkButton" destination="ZRJ-Wa-pMW" id="RJP-L0-9Eo"/>
+                        <outlet property="timeLabel" destination="Cl0-UN-tTk" id="bBu-R3-oGb"/>
+                        <outlet property="timerLabel" destination="iip-9H-QGh" id="JMQ-hY-cGg"/>
+                        <outlet property="walkTimePickerView" destination="Z3u-fM-NS1" id="Mwe-aw-dYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxm-hm-FCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397.60000000000002" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GrassOverlay" width="188" height="335"/>
+        <image name="Koala Emoji" width="240" height="204"/>
+        <image name="KoalaRegular" width="200" height="277"/>
+    </resources>
+</document>
